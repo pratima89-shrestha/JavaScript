@@ -50,3 +50,45 @@ const person={
     age:20,
     isMArried:false,
 }
+
+const name=person.name
+const age=person.age
+const isMarried = person.isMArried
+//this can be written in single line by using the destructuring
+const {name,age,isMArried}=person;
+
+
+
+
+//other object
+cosnt name1="Pratima";
+const age1="20";
+
+const person={
+    name:name1,  / name1,
+    age:age1,     / age1,
+    isMarried:false;
+};
+
+//another example
+//person2 is exactly same but the name is Preeti
+//Pratima name will be replaced with Preeti
+const Person2 ={...person, name:"Preeti"}  //spread operator is used to copy all the elements from one array to another
+
+const person={
+    name:"Pratima",
+    age:20,
+    isMArried:false,
+}
+
+//When working with array
+const names=["ram","Sam","Hari"];
+const names2=[...names, "Sita"];
+console.log("names2") //adds Sita to the names.
+
+//
+
+
+
+
+
