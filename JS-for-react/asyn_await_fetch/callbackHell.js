@@ -29,14 +29,32 @@ for(let i=0;i<5;i++){
 
 
 
- //trying the access the data from the database
-function getData(dataId){
+//  //trying the access the data from the database
+// function getData(dataId){
+//     setTimeout(()=>{
+//         console.log("data",dataId);
+//     },2000)
+// }
+
+// getData(1);
+// getData(2);
+// getData(3);
+
+
+//callbacks to tell the specific getting like if username is wrong say username wrong.
+function getData(dataId, getNextData){
     setTimeout(()=>{
         console.log("data",dataId);
-    },2000)
+        getNextData();
+    },2000);
 }
 
-getData(1);
-getData(2);
-getData(3);
+getData(1,()=>{
+    getData(2);
+});
+
+//lecture 12/29:04 resume
+
+
+
 
