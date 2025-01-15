@@ -1,6 +1,15 @@
 
-
-
+//yt.pedroTech.
+/*function
+const
+components
+button
+ternary operator
+destruction of objects/Destructuring
+array
+map()
+filter()
+*/
 export default function DoSomething(){
 }
 export DoSomething=()=>{
@@ -86,7 +95,31 @@ const names=["ram","Sam","Hari"];
 const names2=[...names, "Sita"];
 console.log("names2") //adds Sita to the names.
 
-//
+//map()
+//adding the number 1 to the end of 
+let names=["ram","hari","sita"];
+names.map((map)=>{
+    return name+"1";
+})
+
+
+//printing the names of the array
+let names=["ram","hari","sita"];
+names.map((name)=>{
+    return<h1>{name}</h1>
+})
+
+//fileter()
+//filtering name other than ram
+let names=["ram","hari","sita"];
+names.filter((name)=>{
+    return name!=="ram";
+})
+
+
+
+
+
 
 
 
