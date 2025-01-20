@@ -53,7 +53,7 @@ getData(1,()=>{
     getData(2);
 });
 
-//lecture 12/29:04 resume
+
 
 
 
