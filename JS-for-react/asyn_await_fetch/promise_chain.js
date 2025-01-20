@@ -1,4 +1,6 @@
 
+//By using the chaining first fetching data1 and then fetching data2
+
 //promise chain api asyncFunc()
 function asyncFunc1() {
     return new Promise((resolve, reject) => {
@@ -21,18 +23,23 @@ function asyncFunc2(){
     })
 }
 
-console.log("Fetching the data1")
-let p1 = asyncFunc1();
-p1.then((res)=>{
-    console.log("res")
-})
-
-console.log("Fetching the data2")
-let p2 = asyncFunc2();
-p2.then((res)=>{
-    console.log("res")
-})
-
-// p1.catch((err)=>{
-// console.log("error")
+// console.log("Fetching the data1")
+// let p1 = asyncFunc1();
+// p1.then((res)=>{
+//     console.log("res")
 // })
+
+// console.log("Fetching the data2")
+// let p2 = asyncFunc2();
+// p2.then((res)=>{
+//     console.log("res")
+// })
+
+// simplify the two
+console.log("Fetching data1");
+asyncFunc1().then(res)=>{
+    console.log("Fetching data2");
+    asyncFunc2().then((res)=>{});
+}
+
+
