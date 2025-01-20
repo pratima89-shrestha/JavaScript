@@ -19,7 +19,7 @@ function asyncFunc2(){
         setTimeout(()=>{
             console.log("data2");
             resolve("success.")
-        },5000);
+        },7000);
     })
 }
 
@@ -35,11 +35,11 @@ function asyncFunc2(){
 //     console.log("res")
 // })
 
-// simplify the two
 console.log("Fetching data1");
-asyncFunc1().then(res)=>{
+asyncFunc1().then(res=>{
     console.log("Fetching data2");
     asyncFunc2().then((res)=>{});
-}
+});
+
 
 
